@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    background-color: #560f6460;
+    position: relative;
+}
+
+.container .to-do{
+    background-color: #fff;
+    box-shadow: 0 0 30px #ffffff;
+    border: 1px solid #560f643b;
+    border-radius: 10px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 600px;
+    min-height: 300px;
+
+}
+
+.container .to-do .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 40px;
+}
+
+.container .to-do .head h2{
+    color: #560f64;
+
+}
+
+.container .to-do .head i{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.container .to-do .form{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.container .to-do .form input{
+    width: 65%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #560f64;
+    outline: none;
+}
+
+.container .to-do .form #btn{
+    background-color: #560f64;
+    border: 1px solid #560f64;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.container .to-do .form #btn:hover{
+    scale: 1.04;
+}
+
+.container .to-do ul{
+    color:#560f64;
+    list-style: none;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.container .to-do ul li{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+}
+
+.container .to-do ul li .circle{
+    cursor: pointer;
+}
+
+.container .to-do ul li .del-icon{
+    cursor: pointer;
+    position: absolute;; 
+    top: 10px;
+    right: 60px;
+    
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: #888;
+}
+
